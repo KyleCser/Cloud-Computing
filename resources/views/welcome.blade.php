@@ -38,10 +38,10 @@
                         <h1> Disc Golf Manager </h1>
 
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <button class="btn btn-primary btn-lg"> New Scorecard </button>
+                            <div class="col-xs-12">
+                                <button class="btn btn-primary"> New Scorecard </button>
 
-                                <button class="btn btn-success btn-lg"> View Statistics </button>
+                                <button class="btn btn-success"> View Statistics </button>
                             </div>
                         </div>
                     </div>
