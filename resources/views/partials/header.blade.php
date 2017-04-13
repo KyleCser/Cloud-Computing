@@ -1,13 +1,17 @@
 <head>
 	<style type="text/css">
 		a.navbar-brand img {
-			height: 25px; 
-			width: auto
+			height: 45px; 
+			width: auto;
+		}
+
+		a.navbar-brand {
+			padding: 2px 15px;
 		}
 	</style>
 </head>
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
 
@@ -21,7 +25,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-            	<img src="{{ asset('png/logo.png') }}">
+            	<img src="{{ asset('png/logo5.png') }}">
             </a>
         </div>
 
