@@ -1,15 +1,21 @@
 @include('partials/header')
 
-@extends('ayouts.app')
+@extends('layouts.app')
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="table table-striped table-hover table-responsive">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+    	<div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover table-bordered">
             	<thead>
             		<tr>
-            			<th> <span class="text-center"> Hole </span></th>
+            			<th>Hole</th>
 	            		<th>1</th>	
 	            		<th>2</th>	
 	            		<th>3</th>	
@@ -49,7 +55,6 @@
 	            		<th>300</th>	
 	            		<th>300</th>	
 	            		<th>300</th>	
-	            		
 	            	</tr>
 	            	<tr>
 	            		<th>Par</th>
