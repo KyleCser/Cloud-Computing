@@ -1,6 +1,6 @@
 @include('partials/header')
 
-@extends('ayouts.app')
+@extends('layouts.app')
 @section('content')
 
 <div class="container">
