@@ -19,8 +19,8 @@ Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
-Route::get('/scorecard/create', 'ScoreCardController@create');
-Route::get('/scorecard/{id}', 'ScoreCardController@show');
+Route::get('/scorecard/create', 'ScorecardController@create');
+Route::get('/scorecard/{id}', 'ScorecardController@show');
 
 Route::resource('scorecard', 'ScorecardController');
 
