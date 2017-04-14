@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', 'HomeController@index');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/scorecard/create', 'ScoreCardController@create');
+Route::get('/scorecard/{id}', 'ScoreCardController@show');
+
+Route::resource('scorecard', 'ScorecardController');
+
