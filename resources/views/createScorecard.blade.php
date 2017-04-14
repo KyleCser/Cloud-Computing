@@ -10,9 +10,9 @@
 </head>
 
 <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2">
     	<div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover table-bordered">
+            <table class="table table-condensed table-bordered table-striped table-hover table-bordered">
             	<thead>
             		<tr>
             			<th>Hole</th>
