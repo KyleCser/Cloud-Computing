@@ -16,7 +16,7 @@ class Scorecards extends Migration
         Schema::create('scorecards', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->json('results');
+            $table->text('results'); //Changed from json, change back if it still doesn't work
             $table->timestamps();
         });
     }
