@@ -39,7 +39,7 @@
                         <h1> Disc Golf Manager </h1>
                         
                         @if(Auth::check())
-                            <p> Welcome, <?php echo $userInfo->name; ?>. </p>
+                            <p> Welcome, <?php echo $userInfo->name; ?>! </p>
                         @endif
                     </div>
                 </div>
