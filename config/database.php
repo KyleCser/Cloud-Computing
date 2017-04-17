@@ -2,7 +2,7 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 print_r($url);
-if ($url == null) { // if null we are in prod
+if ($url["path"]) { // if null we are in prod
     $host = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
