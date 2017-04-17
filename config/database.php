@@ -14,6 +14,8 @@ if ($url == null) { // if null we are in prod
     $database = "cloud";
 }
 
+echo "host: " . $host . " " . "username: " . $username . " " . "password: " . $password . " " . "database: " . $database;
+
 return [
 
     /*
