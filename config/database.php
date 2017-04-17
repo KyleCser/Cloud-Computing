@@ -2,11 +2,17 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
-
+if ($url == null) { // if null we are in prod
+    $host = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $database = substr($url["path"], 1);
+} else { // else we are local
+    $host = "localhost";
+    $username = "homestead";
+    $password = "secret";
+    $database = "cloud";
+}
 
 return [
 
