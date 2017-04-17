@@ -34,6 +34,13 @@ return [
     |
     */
 
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+    $host = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $database = substr($url["path"], 1);
+
     'connections' => [
 
         'sqlite' => [
@@ -43,17 +50,16 @@ return [
         ],
 
         'mysql' => [
-            'driver' => 'mysql',
-            'host' => parse_url(getenv("DATABASE_URL"))["host"],
-            'port' => parse_url(getenv("DATABASE_URL"))["port"],
-            'database' => parse_url(getenv("DATABASE_URL"))["database"],
-            'username' => parse_url(getenv("DATABASE_URL"))["username"],
-            'password' => parse_url(getenv("DATABASE_URL"))["password"],
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
+           'driver' => 'mysql',
+            'port' => env('DB_PORT', '3306'),
+            'host'      => $host,
+            'database'  => $database,
+            'username'  => $username,
+            'password'  => $password,
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
-            'strict' => true,
+            'strict' => false,
             'engine' => null,
         ],
             
