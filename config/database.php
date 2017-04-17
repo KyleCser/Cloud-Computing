@@ -6,7 +6,7 @@ if ($url == null) { // if null we are in prod
     $host = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
-    $database = substr($url["path"], 1);
+    $database = $url["path"];
 } else { // else we are local
     $host = "localhost";
     $username = "homestead";
