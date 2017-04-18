@@ -23,5 +23,8 @@ Route::get('/scorecard/create', 'ScorecardController@create');
 Route::get('/scorecard/{id}', 'ScorecardController@show');
 Route::post('/scorecard/store', 'ScorecardController@store');
 
+Route::get('/stats/{id}', 'StatsController@show');
+
 Route::resource('scorecard', 'ScorecardController');
+Route::resource('stats', 'StatsController');
 

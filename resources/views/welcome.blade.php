@@ -63,10 +63,10 @@
                         <div id="statistics" class="col-xs-12">
                             <h1> Statistics </h1>
 
-                            <button class="btn btn-info"> 
+                            <a class="btn btn-info" href="{{ route('stats.show', ['id' => $userInfo->id]) }}"> 
                                 <i class="fa fa-line-chart"></i>
                                 View Statistics 
-                            </button>
+                            </a>
                         </div>
                     </div>
                 @endif
